@@ -8,5 +8,5 @@ sitesButton.addEventListener('click', function() {
     console.log("Redirecting to the sites page...");
 
     // 4. Change the URL of the current tab
-    window.location.href = "https://tetragon4.com/sites";
+    window.location.href = "http://t4tcrew.com/sites";
 });
