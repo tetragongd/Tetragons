@@ -1,0 +1,70 @@
+/* 1. Reset and Center */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* 2. Geode Background with Sliding Effect */
+body {
+    /* Using your specific file name */
+    background-image: url('image_bebbd3.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Arial Black', sans-serif;
+}
+
+/* 3. The Container (The Secret to Visibility) */
+.container {
+    text-align: center;
+    /* This semi-transparent box makes any background readable */
+    background: rgba(0, 0, 0, 0.6); 
+    padding: 60px;
+    border-radius: 30px;
+    backdrop-filter: blur(8px); /* Frosted glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* 4. The Massive Letters with Visibility Fix */
+h1 {
+    color: #ffffff;
+    font-size: 8rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    /* The Glow: This prevents camouflage by creating a dark border around white text */
+    text-shadow: 
+        0 0 20px rgba(0, 0, 0, 1), 
+        0 0 10px rgba(0, 0, 0, 1),
+        0 0 40px #9b59b6; /* Purple glow to match geode theme */
+}
+
+/* 5. The Button */
+button {
+    padding: 20px 40px;
+    font-size: 1.8rem;
+    cursor: pointer;
+    background: #9b59b6;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: white;
+    color: #9b59b6;
+}
+
+/* 6. Selection Fix */
+::selection {
+    background: #ffffff;
+    color: #000000;
+}
